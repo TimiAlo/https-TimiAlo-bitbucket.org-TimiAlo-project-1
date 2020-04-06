@@ -1,0 +1,52 @@
+nav{
+	border:1px solid black;
+	Height: 100%;
+	Width:100%;
+	Background:royalblue;
+	background-color: gold; font-family: Helvetica, sans-serif; 
+	
+		} 
+a{
+		 font-weight: bold;
+		 
+		  background-color: tomato; 
+		  border: 1px solid black ;
+		padding: 5px 15px;
+		border-radius: 20%; 
+		
+	}
+
+
+article::first-letter{
+	font-size: 200%;
+}
+a:visited{
+	color: black;
+}
+header{
+	border:1px solid black;
+}
+footer{
+	background-color: rgb(25, 53, 177);
+	border:1px solid black;
+}
+article{
+	border:1px solid black;
+	margin: 30px, 50px;
+	padding: 30px;
+}
+
+main{
+	font-family:'Times New Roman', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, serif;
+	margin: 30px, 50px;
+	padding: 30px;
+	font-size: 110%;
+}
+
+	
+h2{
+	color: green;
+}
+
+
+
