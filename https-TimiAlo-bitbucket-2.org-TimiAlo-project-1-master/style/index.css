@@ -1,0 +1,15 @@
+nav{
+    border:1px solid black;
+background-color:green;
+
+}
+tbody tr:nth-child(odd){
+	background-color: cornflowerblue;
+	border:blue ;
+
+}
+tbody tr:nth-child(even){
+	background-color: greenyellow;
+	border:black ;
+
+}
