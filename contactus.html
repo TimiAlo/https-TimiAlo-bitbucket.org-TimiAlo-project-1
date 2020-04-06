@@ -18,18 +18,18 @@
 
 <body>
 	<main>
-	
-			
-		<header >
-            <img src="images/logo.png" alt="The company logo"  title="Company logo" />
+
+
+		<header>
+			<img src="images/logo.png" alt="The company logo" title="Company logo" />
 			<!--Navigation to other documents were added-->
 			<nav>
 				<ol>
-                    <li> <a href="index.html">Back to Main Page</a> </li>
-                </ol>
-                <ol>
+					<li> <a href="index.html">Back to Main Page</a> </li>
+				</ol>
+				<ol>
 					<li> <a href="aboutus.html">About Our Company</a></li>
-					
+
 
 
 
@@ -37,91 +37,92 @@
 
 			</nav>
 
-			
+
 
 		</header>
-		
+
 		<!--The form was created here-->
-	
+
 		<main>
 			<h1>Contact Us</h1><br />
 			<p>Please fill the form below for any enquires about our company</p>
 
 			<form action="mailto: oalo814@mtroyal.ca" method="POST" id="userform">
+				<fieldset>
+					<input type="hidden" name="subject" value="Customer Enquiry Form">
 
-				<input type="hidden" name="subject" value="Customer Enquiry Form">
+					<p>
+						<label> Name*:
+							<input name=name type="text" maxlength="20" size="25" required>
+						</label>
+						<br />
+					</p>
+					<p>
+						<label> Email*:
+							<input name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+						</label>
+						<br />
+					</p>
+					<p>
+						<label> Telephone Number:
+							<input name="telephone number" type="tel" pattern="[0-9]{3}[\-][0-9]{3}[0-9]{4}">
+						</label>
+						<br />
+					</p>
 
-				<p>
-					<label> Name*:
-						<input name=name type="text" maxlength="20" size="25" required>
-					</label>
-					<br />
-				</p>
-				<p>
-					<label> Email*:
-						<input name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-					</label>
-					<br />
-				</p>
-				<p>
-					<label> Telephone Number:
-						<input name="telephone number" type="tel" pattern="[0-9]{3}[\-][0-9]{3}[0-9]{4}" >
-					</label>
-					<br />
-				</p>
-
-				<p>
-					<label> Date:
-						<input name="date" type="date" />
-					</label>
-					<br />
-				</p>
-				<p>
-					<label> Subject of Enquiry:*
-						<input name=subject type=text maxlength=30 size=35 required />
-					</label>
-					<br />
-				</p>
-				<p>
-					<label> Details of Enquiry*:
-						<textarea name=details form=userform row=5 col=50 placeholder="Enter enquiry here"
-							required></textarea>
-
-
-					</label>
-				</p>
-				<p> Type of Enquiry:
-					<br />
-					<label> App Related
-						<input name="type" type="radio" value="App Related" checked />
-					</label>
-					<label> Customer Service Related
-						<input name="type" type="radio" value="Customer Service Related" />
-					</label>
-
-				</p>
-				<p>Departments you Want to Contact:
-					<br />
-					<label> HR Department
-						<input name="choice" type="checkbox" value="HR Department" />
-
-					</label>
-					<label> Customer Service Department
-						<input name="choice" type="checkbox" value="Customer Service Department" />
-					</label>
-					<label> Marketing Department
-						<input name="choice" type="checkbox" value="Marketing Department" />
+					<p>
+						<label> Date:
+							<input name="date" type="date" />
+						</label>
+						<br />
+					</p>
+					<p>
+						<label> Subject of Enquiry:*
+							<input name=subject type=text maxlength=30 size=35 required />
+						</label>
+						<br />
+					</p>
+					<p>
+						<label> Details of Enquiry*:
+							<textarea name=details form=userform row=5 col=50 placeholder="Enter enquiry here"
+								required></textarea>
 
 
-					</label>
+						</label>
+					</p>
+					<p> Type of Enquiry:
+						<br />
+						<label> App Related
+							<input name="type" type="radio" value="App Related" checked />
+						</label>
+						<label> Customer Service Related
+							<input name="type" type="radio" value="Customer Service Related" />
+						</label>
+
+					</p>
+					<p>Departments you Want to Contact:
+						<br />
+						<label> HR Department
+							<input name="choice" type="checkbox" value="HR Department" />
+
+						</label>
+						<label> Customer Service Department
+							<input name="choice" type="checkbox" value="Customer Service Department" />
+						</label>
+						<label> Marketing Department
+							<input name="choice" type="checkbox" value="Marketing Department" />
 
 
-				</p>
+						</label>
 
-				<input type="submit" value="submit" />
-				<input type="reset" value="clear" />
+
+					</p>
+
+					<input type="submit" value="submit" />
+					<input type="reset" value="clear" />
+				</fieldset>
 			</form>
-	
+
 
 
 
@@ -130,7 +131,7 @@
 
 
 		</main>
-</div>
+		</div>
 
 
 		<footer>
@@ -138,7 +139,7 @@
 			<a href="#pageTop">Back to Top</a>
 		</footer>
 
-     
+
 
 
 

@@ -10,3 +10,35 @@ figure{
 article{
     border: 1px solid black;
 }
+@media only screen and (min-width: 768px) and (max-width:1023px)
+{
+#wrapper {
+	text-align: center;
+display: grid;
+ grid-template-columns: 1fr  1fr; 
+ grid-gap: 10px;
+height:100%;
+	 }
+	 article{
+        border: 1px var(--main-border-color);
+        border-radius: 10px;
+        background-color: var(--main-bg-color);
+        /*height:50px;*/
+        font-size: 50px;
+	  }
+	  .item {
+		border: 2px strong var(--main-border-color); border-radius: 10px;  
+		
+	 }	
+	
+	 #item1, #item5, #item6{
+		 grid-column: 1/4;
+		 width:100%;
+	 }	
+	#item5{
+		height:100%;
+	}
+#item2{
+	grid-column: 1/4;
+}
+}

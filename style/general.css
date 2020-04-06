@@ -1,5 +1,5 @@
 :root{
-	--main-bg-color:tomato;
+	--main-bg-color: yellow;
 	--other-bg-color:gold;
 	--main-heading-color: green;
 	--main-border-color:black;
@@ -8,6 +8,8 @@
 	--other-table-color:greenyellow;
 
 }
+
+/* This media was built for large devices*/
 @media only screen and (min-width: 1024px) and (max-width:1700px)
 {
 	
@@ -71,6 +73,9 @@ h2{
 
 
 }
+
+/* This media was built for medium devices*/
+
 @media only screen and (min-width: 768px) and (max-width:1023px)
 {
 #wrapper {
@@ -180,8 +185,110 @@ h2{
 }
 }
 
+/* This media was built for small devices*/
 
-
-
-
+@media only screen and (min-width: 200px) and (max-width: 768px)
+{
+main {
+	text-align: center;
+display: grid;
+ grid-template-columns: 1fr; 
+ grid-gap: 5px;
+height:100%;
+	 }
+	 .item {
+		border: 2px strong var(--main-border-color); border-radius: 5px;  
+		
+	 }	
+	
+		
+	#item5{
+		height:100%;
 	}
+#item3{
+	grid-column: 1/4;
+}
+table, td{ 
+	border:3px solid;
+	width:100%;
+}
+nav{
+	border:1px solid var(--main-border-color);
+	
+	display: flex;
+	justify-content: center;
+	 align-items:center; 
+	 flex-direction: column;
+	
+	Height: 100%;
+	Width:100%;
+	Background:var(--other-border-color);
+		
+	
+			position:sticky;
+	
+		background-color: var(--other-bg-color); font-family: Helvetica, sans-serif; 
+	
+		} 
+a{
+		 font-weight: bold;
+		  font-size: 50%; 
+		  background-color: var(--main-bg-color); 
+		  border: 1px solid var(--main-border-color);
+		padding: 5px 15px;
+		border-radius: 20%; 
+		
+	}
+
+
+article::first-letter{
+	font-size: 200%;
+}
+
+header{
+	border:1px solid var(--main-border-color);
+}
+footer{
+	background-color: var(--other-border-color);
+	border:1px solid var(--main-border-color);
+}
+article{
+	border:1px solid var(--main-border-color);
+	margin: 30px, 50px;
+	padding: 30px;
+}
+section{
+	border:1px solid var(--main-border-color);
+	margin: 30px, 50px;
+	padding: 30px;
+}
+main{
+	font-family:'Times New Roman', Times, serif;
+	margin: 30px, 50px;
+	padding: 30px;
+	font-size: 50%;
+    
+	
+}
+tbody tr:nth-child(odd){
+	background-color: var(--main-table-color);
+	border:var(--other-border-color) ;
+
+}
+tbody tr:nth-child(even){
+	background-color: var(--other-table-color);
+	border:var(--main-border-color) ;
+
+}
+	
+h2{
+	color:var(--main-heading-color);
+}
+div{
+	border-color: var(--main-bg-color);
+}
+}
+
+
+
+	
